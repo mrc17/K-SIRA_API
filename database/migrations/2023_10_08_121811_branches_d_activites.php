@@ -12,7 +12,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('branches_d_activites', function (Blueprint $table) {
-            $table->string('id', 10)->primary();
+            $table->id('id');
             $table->string('nom_de_la_branche');
         });
     }
